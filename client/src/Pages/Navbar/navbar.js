@@ -56,6 +56,19 @@ function NavBar() {
           >
             Post Project
           </Button>{" "}
+          <Button
+            as={Link}
+            to="/profile"
+            style={{
+              padding: "5px 25px",
+              margin: "52px",
+              backgroundColor: "#ff6600",
+              borderColor: "#ff6600",
+              color: "#fff",
+            }}
+          >
+            Profile
+          </Button>{" "}
         </Navbar.Collapse>
       </Container>
     </Navbar>
