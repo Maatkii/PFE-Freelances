@@ -65,6 +65,12 @@ const FormC = () => {
           >
             Create my account
           </button>
+          <Link
+            to="/Register"
+            className="air3-btn air3-btn-primary air3-btn-block-sm"
+          >
+            Back to Sign Up
+          </Link>
           <p className="text-center text-body mt-4x mb-6x">
             Already have an account ?
             <Link to="/login" className="up-n-link">
