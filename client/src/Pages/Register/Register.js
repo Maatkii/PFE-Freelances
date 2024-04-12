@@ -16,7 +16,7 @@ const Register = () => {
   return (
     <div className="register">
       <div className="container">
-        {form == 1 ? (
+        {form === 1 ? (
           <div className="air3-grid-container">
             <div className="page-containers span-md-8 span-md-10 span-md-12">
               <div className="page-card mt-8x my-md-10x">
@@ -246,7 +246,7 @@ const Register = () => {
               </div>
             </div>
           </div>
-        ) : form == 2 ? (
+        ) : form === 2 ? (
           <FormC />
         ) : (
           <FormF />
