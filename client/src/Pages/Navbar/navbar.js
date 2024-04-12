@@ -51,7 +51,7 @@ function NavBar() {
           <Button
             as={Link}
             to="/job-post"
-            style={{ padding: "5px 25px", margin: "52px" }}
+            style={{ padding: "5px 27px", margin: "38px" }}
             variant="dark"
           >
             Post Project
@@ -60,8 +60,8 @@ function NavBar() {
             as={Link}
             to="/profile"
             style={{
-              padding: "5px 25px",
-              margin: "52px",
+              padding: "5px 27px",
+              margin: "38px",
               backgroundColor: "#ff6600",
               borderColor: "#ff6600",
               color: "#fff",
