@@ -62,20 +62,11 @@
   border-radius: 5px;
 }
 
-.login-button {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
-
 .login-button:hover {
-  background-color: #0056b3;
+  background-color: #ff6600;
 }
 .login-h1 {
-  color: blue; /* Appliquer la couleur bleue */
+  color: #ff6600; /* Appliquer la couleur bleue */
 }
 
 .remember-box p,
@@ -84,11 +75,18 @@
   color: #fff;
 }
 .btn-login {
-  background: #ff6600;
-
+  background-color: #ff6600;
   color: #fff;
-  width: 100%;
-  border-radius: 8px;
-  text-transform: uppercase;
-  font-weight: 500 !important;
+  border: none;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 30px auto 0;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.btn-login:hover {
+  background: #070125;
 }
