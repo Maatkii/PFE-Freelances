@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+
 const FormC = () => {
   return (
     <div className="register-client">
@@ -65,9 +66,15 @@ const FormC = () => {
           >
             Create my account
           </button>
+          <Link
+            to="/Register"
+            className="air3-btn air3-btn-primary air3-btn-block-sm"
+          >
+            Back to Sign Up
+          </Link>
           <p className="text-center text-body mt-4x mb-6x">
             Already have an account ?
-            <Link to="/Login" className="up-n-link">
+            <Link to="/login" className="up-n-link">
               Log In
             </Link>
           </p>
