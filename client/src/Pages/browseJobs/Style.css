@@ -1,0 +1,11 @@
+.condidate-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*height: 500px;
+  width: 500px;*/
+}
+.condidate-card img {
+  height: 550px;
+  width: 550px;
+}

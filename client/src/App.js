@@ -9,6 +9,7 @@ import NavBar from "./Pages/Navbar/navbar";
 import Register from "./Pages/Register/Register";
 import JobPostForm from "./Pages/Client/JobPostForm/JobPostForm";
 import Profile from "./Pages/Freelancer/Profile";
+import BrowseJobs from "./Pages/browseJobs/CondidateList";
 
 function App() {
   const { user } = useSelector((state) => state.LoginReducer);
@@ -54,6 +55,14 @@ function App() {
           element={
             <PublicRoute user={user}>
               <Profile />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/browseJobs"
+          element={
+            <PublicRoute user={user}>
+              <BrowseJobs />
             </PublicRoute>
           }
         />

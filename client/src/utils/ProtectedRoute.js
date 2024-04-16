@@ -16,12 +16,12 @@ function PrivateRoute({ user, children }) {
     return <Navigate to="/login" />;
   } else if (
     user !== jwt_decode(LoggedIn).role &&
-    jwt_decode(LoggedIn).role == 1
+    jwt_decode(LoggedIn).role === 1
   ) {
     return <Navigate to="/dashboard" />;
   } else if (
     user !== jwt_decode(LoggedIn).role &&
-    jwt_decode(LoggedIn).role == 2
+    jwt_decode(LoggedIn).role === 2
   ) {
     return <Navigate to="/dashboard" />;
   }
