@@ -1,9 +1,10 @@
 .register {
+  background: #333;
   height: 90vh;
   display: flex;
   align-items: center;
 }
-.container {
+.register .container {
   --container-width: 1280px;
   --container-ws-x: 16px;
   --container-ws-y: 16px;
@@ -14,7 +15,7 @@
   padding-right: 80px !important;
   padding-left: 80px !important;
 }
-.air3-grid-container {
+.register .air3-grid-container {
   --template-col: repeat(12, 1fr);
   --row-gap: 16px;
   --col-gap: 16px;
@@ -24,7 +25,6 @@
   gap: 32px;
 }
 .page-containers {
-  padding: 0 80px;
   grid-column: 3 / 11;
 }
 .mt-8x {
@@ -44,9 +44,9 @@
   padding: 24px;
   height: 300px;
   width: 300px;
-  background: #00000071;
-  border: 1px solid #ccc;
-  color: #fff;
+  background: #f9f9f9;
+  border: 2px solid #c6c6c6;
+  color: #181818;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
@@ -94,10 +94,10 @@ p.text-body {
   --icon-size: 24px;
 }
 .air3-radio-label.is-active .air3-checkbox-fake-input {
-  --checkbox-bg: #ccc;
-  --checkbox-text-icon: #ccc;
+  --checkbox-bg: #141a13;
+  --checkbox-text-icon: #fff;
   border-color: #17046a;
-  background: #17046a;
+  background: #4d0ac9;
 }
 .air3-radio-label .air3-checkbox-fake-input {
   border-radius: 50%;
@@ -111,8 +111,8 @@ p.text-body {
   width: 24px;
   height: 24px;
   transition: box-shadow 0.3s ease;
-  color: #ccc;
-  border: 1px solid #ccc;
+  color: #fff;
+  border: 2px solid #c6c6c6;
   border-radius: 4px;
   position: relative;
   top: -1px;
@@ -146,11 +146,11 @@ p.text-body {
   font-size: 16px;
   font-weight: 500;
   background-color: transparent;
-  background-color: #ff6600;
+  background-color: #0e054a;
   color: inherit;
   color: #fff;
   border: 2px solid transparent;
-  border-radius: 2rem;
+  border-radius: 10rem;
   white-space: nowrap;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -162,7 +162,7 @@ p.text-body {
   width: 250px;
 }
 .up-n-link {
-  color: #2807c0fa;
+  color: #4e05cb;
   font-weight: 600;
   text-decoration: underline !important;
   transition: color 0.1s ease-in-out;
@@ -180,36 +180,14 @@ p.text-body {
 }
 
 .form-register {
-  background-color: rgba(0, 0, 0, 0.44);
   width: 70%;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 2px solid #c6c6c6;
+  border-radius: 9px;
   padding: 20px;
 }
 .form-register input {
-  border: 1px solid #ccc;
-  outline: 0;
-  width: 100%;
-  height: 53px;
-  padding: 20px;
-  padding-left: 40px;
-  margin-bottom: 21px;
-  background-color: #00000071;
-  position: relative;
+  border: 1px solid #2b282852 !important;
 }
-
-.container input[type="text"]:focus,
-.container input[type="email"]:focus,
-.container input[type="password"]:focus {
-  background-color: #00000071;
-  color: #ccc;
-}
-.container input[type="text"]::placeholder,
-.container input[type="email"]::placeholder,
-.container input[type="password"]::placeholder {
-  color: #ccc;
-}
-
 .air3-btn-block-sm {
   width: 180px !important;
   margin: 0 auto;

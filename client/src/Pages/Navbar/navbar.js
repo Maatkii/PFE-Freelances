@@ -51,23 +51,10 @@ function NavBar() {
           <Button
             as={Link}
             to="/job-post"
-            style={{ padding: "5px 27px", margin: "38px" }}
+            style={{ padding: "5px 25px", margin: "52px" }}
             variant="dark"
           >
             Post Project
-          </Button>{" "}
-          <Button
-            as={Link}
-            to="/profile"
-            style={{
-              padding: "5px 27px",
-              margin: "38px",
-              backgroundColor: "#ff6600",
-              borderColor: "#ff6600",
-              color: "#fff",
-            }}
-          >
-            Profile
           </Button>{" "}
         </Navbar.Collapse>
       </Container>

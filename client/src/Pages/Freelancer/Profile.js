@@ -1,3 +1,4 @@
+// Profile.js
 import React, { useState } from "react";
 import "./steps/Step1.css";
 import Step1 from "./steps/Step1";
@@ -38,13 +39,14 @@ function Profile() {
   };
 
   const handleSubmit = () => {
+    // Handle form submission here
     console.log("Form submitted:", formData);
   };
 
   return (
     <div className="centered-container">
       {" "}
-      {}
+      {/* Centering container */}
       <div className="multi-step-form-container">
         <div className="multi-step-form">
           {step === 1 && (
