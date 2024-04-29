@@ -1,22 +1,33 @@
 import React, { useState } from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import FormC from "./FormC";
 import FormF from "./FormF";
+import { register } from "../../redux/actions/Actions";
+import { useDispatch } from "react-redux";
 const Register = () => {
   const [client, setClient] = useState(true);
   const [form, setForm] = useState(1);
+  const [registredUser, setRegistredUser] = useState({
+    role: "client",
+  });
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const changeRoleTrue = () => {
     setClient(true);
+    setRegistredUser({ ...registredUser, role: "client" });
   };
   const changeRoleFalse = () => {
     setClient(false);
+    setRegistredUser({ ...registredUser, role: "freelancer" });
   };
-
+  const handleSubmit = () => {
+    dispatch(register({ registredUser, navigate }));
+  };
   return (
     <div className="register">
       <div className="container">
-        {form === 1 ? (
+        {form == 1 ? (
           <div className="air3-grid-container">
             <div className="page-containers span-md-8 span-md-10 span-md-12">
               <div className="page-card mt-8x my-md-10x">
@@ -246,10 +257,18 @@ const Register = () => {
               </div>
             </div>
           </div>
-        ) : form === 2 ? (
-          <FormC />
+        ) : form == 2 ? (
+          <FormC
+            registredUser={registredUser}
+            setRegistredUser={setRegistredUser}
+            handleSubmit={handleSubmit}
+          />
         ) : (
-          <FormF />
+          <FormF
+            registredUser={registredUser}
+            setRegistredUser={setRegistredUser}
+            handleSubmit={handleSubmit}
+          />
         )}
       </div>
     </div>

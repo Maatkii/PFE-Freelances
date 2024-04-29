@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-image: url("../../../Assets/images/klm.jpg");
+  /* background-image: url("../../../Assets/images/lmk.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -19,11 +19,10 @@ body {
   background-color: rgba(0, 0, 0, 0.44); /* Semi-transparent black background */
   padding: 20px;
   border-radius: 10px;
-  border: 2px solid #c6c6c6;
 }
 
 /* Form label styles */
-label {
+.job-post label {
   color: #fff;
   font-size: 20px;
 }
@@ -51,7 +50,7 @@ textarea {
 /* Required field styling */
 input:required,
 textarea:required {
-  border-color: #fff; /* Change border color for required fields */
+  border-color: #ff6347; /* Change border color for required fields */
 }
 
 /* Form submit button styling */
@@ -59,7 +58,7 @@ textarea:required {
   background-color: #ff6600;
   color: #fff;
   border: none;
-  border-radius: 2rem;
+  border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
@@ -69,29 +68,11 @@ textarea:required {
 
 /* Form submit button hover effect */
 .job-post-form button[type="submit"]:hover {
-  background: #070125;
-}
-
-.job-post-form button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  grid-column-gap: 16px;
-  -moz-column-gap: 16px;
-  column-gap: 16px;
-  max-height: 40px;
-  line-height: calc(40px - 1px);
-
-  user-select: none;
-  transition: all 0.1s ease-in-out;
+  background-color: #ff6600;
 }
 
 /* Form title styling */
 .job-post h2 {
-  font-size: 40px;
-  margin-bottom: 23px;
-  display: flex;
-  justify-content: center;
-  margin-top: 21px;
-  color: rgba(0, 0, 0, 0.737);
+  font-size: 60px;
+  margin-bottom: 20px;
 }
